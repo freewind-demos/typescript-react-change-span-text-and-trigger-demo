@@ -1,10 +1,9 @@
-TypeScript React Change Input Value and Trigger Demo
+TypeScript React Change Span Text and Trigger Demo
 =================================
 
-从react之外修改某个input的值，并且触发相应的事件，让react感知到这个变化。
+从react之外修改某个contentEditable的span，然后触发react的state change
 
-由于react修改了`input.value`的相关方法，直接调用`input.value=?`无效，
-需要使用特别办法。
+直接修改textContent，并分发`input`事件。
 
 ```
 npm install
